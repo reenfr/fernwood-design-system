@@ -2,8 +2,8 @@
 
 An accessibility-first design system for a fictional bookstore café. Designed in Figma, built with React + Tailwind CSS.
 
-- **Live site:** _add GitHub Pages link_
-- **Figma file:** _add link_
+- **Live site:** https://fernwoodportfolio.netlify.app
+- **Figma file:** https://www.figma.com/make/GDaWTChOodlLSgAmcoE1qH/Design-system-for-Fernwood?code-node-id=0-6&p=f&t=JzKCVCjapWpjOTLv-0&fullscreen=1&preview-route=%2F%23components
 
 ## Run locally
 ```bash
