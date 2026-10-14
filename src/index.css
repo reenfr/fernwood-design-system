@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FAF6EE;
+  --color-paper-2: #F1EADF;
+  --color-rule: #DDD6C7;
+  --color-surface: #FFFFFF;
+  --color-ink: #1F2A24;
+  --color-muted: #4A5750;
+  --color-forest-100: #DDEBE2;
+  --color-forest-700: #1F5A3D;
+  --color-forest-800: #17452E;
+  --color-terracotta-700: #A63D1E;
+  --color-error: #B3261E;
+  --color-error-dark: #8C1D18;
+  --color-error-tint: #FBE9E7;
+  --color-success: #14683A;
+  --color-success-tint: #DFF0E5;
+  --color-warn-bg: #FFF1CC;
+  --color-warn-text: #5C4200;
+  --color-line: #6F7A72;
+  --color-focus: #0B57D0;
+  --color-disabled-bg: #DCE0DD;
+  --color-disabled-text: #5A645E;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.25rem;
+  --text-3xl: 3rem;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 1rem; }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; }
+  /* 2px blue ring with a 2px gap so it stays visible on green buttons */
+  :focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+  .on-dark :focus-visible { outline-color: #fff; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
